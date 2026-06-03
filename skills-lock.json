@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "llm-wiki": {
+      "source": "nashsu/llm_wiki_skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "c39b338ba3f28f3895fd2e3e0bb0e7382e2405e06c6c5efa8f42bab2af40f9fe"
+    }
+  }
+}

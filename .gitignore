@@ -1,0 +1,9 @@
+.build/
+.swiftpm/
+*.xcworkspace/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+.DS_Store
+/build
+/.agents

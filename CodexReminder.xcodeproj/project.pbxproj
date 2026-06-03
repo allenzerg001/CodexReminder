@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F0600012C00000600000001 /* CodexReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100202C00000100000020 /* CodexReminderApp.swift */; };
+		5F0600022C00000600000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100212C00000100000021 /* AppState.swift */; };
+		5F0600032C00000600000003 /* ClaudeCodeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100222C00000100000022 /* ClaudeCodeMonitor.swift */; };
+		5F0600042C00000600000004 /* CodexMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100232C00000100000023 /* CodexMonitor.swift */; };
+		5F0600052C00000600000005 /* FileBasedMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100242C00000100000024 /* FileBasedMonitor.swift */; };
+		5F0600062C00000600000006 /* QoderMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100252C00000100000025 /* QoderMonitor.swift */; };
+		5F0600072C00000600000007 /* ToolMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100262C00000100000026 /* ToolMonitor.swift */; };
+		5F0600082C00000600000008 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100272C00000100000027 /* TouchBarController.swift */; };
+		5F0600092C00000600000009 /* AppIconResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100282C00000100000028 /* AppIconResource.swift */; };
+		5F06000A2C0000060000000A /* HookResponseWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100292C00000100000029 /* HookResponseWriter.swift */; };
+		5F06000B2C0000060000000B /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01002A2C0000010000002A /* Logging.swift */; };
+		5F06000C2C0000060000000C /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01002B2C0000010000002B /* NotificationHelper.swift */; };
+		5F06000D2C0000060000000D /* ProcessHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01002C2C0000010000002C /* ProcessHelper.swift */; };
+		5F06000E2C0000060000000E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01002D2C0000010000002D /* StatusBarController.swift */; };
+		5F06000F2C0000060000000F /* MenuBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01002E2C0000010000002E /* MenuBarIcon.swift */; };
+		5F0600102C00000600000010 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01002F2C0000010000002F /* MenuBarView.swift */; };
+		5F0600112C00000600000011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100302C00000100000030 /* SettingsView.swift */; };
+		5F0600202C00000600000020 /* HookBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100402C00000100000040 /* HookBridge.swift */; };
+		5F0600212C00000600000021 /* HookInstallationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100412C00000100000041 /* HookInstallationManager.swift */; };
+		5F0600222C00000600000022 /* HookNotificationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100422C00000100000042 /* HookNotificationEvent.swift */; };
+		5F0600232C00000600000023 /* HookRuntimeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100432C00000100000043 /* HookRuntimeState.swift */; };
+		5F0600242C00000600000024 /* MonitorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100442C00000100000044 /* MonitorConfig.swift */; };
+		5F0600252C00000600000025 /* OutputAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100452C00000100000045 /* OutputAnalyzer.swift */; };
+		5F0600262C00000600000026 /* ProcessOutputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100462C00000100000046 /* ProcessOutputParser.swift */; };
+		5F0600272C00000600000027 /* StateEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100472C00000100000047 /* StateEngine.swift */; };
+		5F0600282C00000600000028 /* ToolChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100482C00000100000048 /* ToolChoice.swift */; };
+		5F0600292C00000600000029 /* ToolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100492C00000100000049 /* ToolInfo.swift */; };
+		5F06002A2C0000060000002A /* ToolStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01004A2C0000010000004A /* ToolStatus.swift */; };
+		5F0600302C00000600000030 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0100502C00000100000050 /* main.swift */; };
+		5F0600402C00000600000040 /* CodexReminder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5F0100072C00000100000007 /* CodexReminder.icns */; };
+		5F0600412C00000600000041 /* touch_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0100062C00000100000006 /* touch_bar.png */; };
+		5F0600422C00000600000042 /* ProviderIcons in Resources */ = {isa = PBXBuildFile; fileRef = 5F0100082C00000100000008 /* ProviderIcons */; };
+		5F0600502C00000600000050 /* libCodexReminderCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F01001A2C0000010000001A /* libCodexReminderCore.a */; };
+		5F0600512C00000600000051 /* libCodexReminderCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F01001A2C0000010000001A /* libCodexReminderCore.a */; };
+		5F0600522C00000600000052 /* CodexReminderHook in Copy Hook */ = {isa = PBXBuildFile; fileRef = 5F01001B2C0000010000001B /* CodexReminderHook */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F0800022C00000800000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0400012C00000400000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F0300022C00000300000002;
+			remoteInfo = CodexReminderCore;
+		};
+		5F0800042C00000800000004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0400012C00000400000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F0300032C00000300000003;
+			remoteInfo = CodexReminderHook;
+		};
+		5F0800062C00000800000006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0400012C00000400000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F0300022C00000300000002;
+			remoteInfo = CodexReminderCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F0700042C00000700000004 /* Copy Hook */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				5F0600522C00000600000052 /* CodexReminderHook in Copy Hook */,
+			);
+			name = "Copy Hook";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F0100012C00000100000001 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		5F0100022C00000100000002 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5F0100032C00000100000003 /* skills-lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "skills-lock.json"; sourceTree = "<group>"; };
+		5F0100042C00000100000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0100052C00000100000005 /* CodexReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodexReminder.entitlements; sourceTree = "<group>"; };
+		5F0100062C00000100000006 /* touch_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touch_bar.png; sourceTree = "<group>"; };
+		5F0100072C00000100000007 /* CodexReminder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CodexReminder.icns; sourceTree = "<group>"; };
+		5F0100082C00000100000008 /* ProviderIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ProviderIcons; sourceTree = "<group>"; };
+		5F01000B2C0000010000000B /* package_app.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package_app.sh; sourceTree = "<group>"; };
+		5F01000C2C0000010000000C /* verify_packaging.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify_packaging.sh; sourceTree = "<group>"; };
+		5F01000D2C0000010000000D /* verify_detection.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify_detection.sh; sourceTree = "<group>"; };
+		5F01000E2C0000010000000E /* simulate_notifications.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = simulate_notifications.sh; sourceTree = "<group>"; };
+		5F01000F2C0000010000000F /* respond_to_latest.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = respond_to_latest.py; sourceTree = "<group>"; };
+		5F0100192C00000100000019 /* CodexReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodexReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F01001A2C0000010000001A /* libCodexReminderCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCodexReminderCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F01001B2C0000010000001B /* CodexReminderHook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodexReminderHook; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0100202C00000100000020 /* CodexReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexReminderApp.swift; sourceTree = "<group>"; };
+		5F0100212C00000100000021 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5F0100222C00000100000022 /* ClaudeCodeMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeCodeMonitor.swift; sourceTree = "<group>"; };
+		5F0100232C00000100000023 /* CodexMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexMonitor.swift; sourceTree = "<group>"; };
+		5F0100242C00000100000024 /* FileBasedMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBasedMonitor.swift; sourceTree = "<group>"; };
+		5F0100252C00000100000025 /* QoderMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoderMonitor.swift; sourceTree = "<group>"; };
+		5F0100262C00000100000026 /* ToolMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolMonitor.swift; sourceTree = "<group>"; };
+		5F0100272C00000100000027 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
+		5F0100282C00000100000028 /* AppIconResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconResource.swift; sourceTree = "<group>"; };
+		5F0100292C00000100000029 /* HookResponseWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookResponseWriter.swift; sourceTree = "<group>"; };
+		5F01002A2C0000010000002A /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		5F01002B2C0000010000002B /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		5F01002C2C0000010000002C /* ProcessHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessHelper.swift; sourceTree = "<group>"; };
+		5F01002D2C0000010000002D /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		5F01002E2C0000010000002E /* MenuBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIcon.swift; sourceTree = "<group>"; };
+		5F01002F2C0000010000002F /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		5F0100302C00000100000030 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5F0100402C00000100000040 /* HookBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookBridge.swift; sourceTree = "<group>"; };
+		5F0100412C00000100000041 /* HookInstallationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookInstallationManager.swift; sourceTree = "<group>"; };
+		5F0100422C00000100000042 /* HookNotificationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookNotificationEvent.swift; sourceTree = "<group>"; };
+		5F0100432C00000100000043 /* HookRuntimeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookRuntimeState.swift; sourceTree = "<group>"; };
+		5F0100442C00000100000044 /* MonitorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorConfig.swift; sourceTree = "<group>"; };
+		5F0100452C00000100000045 /* OutputAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputAnalyzer.swift; sourceTree = "<group>"; };
+		5F0100462C00000100000046 /* ProcessOutputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOutputParser.swift; sourceTree = "<group>"; };
+		5F0100472C00000100000047 /* StateEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateEngine.swift; sourceTree = "<group>"; };
+		5F0100482C00000100000048 /* ToolChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolChoice.swift; sourceTree = "<group>"; };
+		5F0100492C00000100000049 /* ToolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolInfo.swift; sourceTree = "<group>"; };
+		5F01004A2C0000010000004A /* ToolStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolStatus.swift; sourceTree = "<group>"; };
+		5F0100502C00000100000050 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F0700022C00000700000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0600502C00000600000050 /* libCodexReminderCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0700062C00000700000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0700082C00000700000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0600512C00000600000051 /* libCodexReminderCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F0200012C00000200000001 = {
+			isa = PBXGroup;
+			children = (
+				5F0100012C00000100000001 /* Package.swift */,
+				5F0200022C00000200000002 /* Sources */,
+				5F0200062C00000200000006 /* Tests */,
+				5F0200072C00000200000007 /* Resources */,
+				5F0200092C00000200000009 /* Scripts */,
+				5F02000A2C0000020000000A /* Products */,
+				5F0100032C00000100000003 /* skills-lock.json */,
+				5F0100022C00000100000002 /* .gitignore */,
+			);
+			sourceTree = "<group>";
+		};
+		5F0200022C00000200000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5F0200032C00000200000003 /* CodexReminder */,
+				5F0200042C00000200000004 /* CodexReminderCore */,
+				5F0200052C00000200000005 /* CodexReminderHook */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5F0200032C00000200000003 /* CodexReminder */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100202C00000100000020 /* CodexReminderApp.swift */,
+				5F02000B2C0000020000000B /* Models */,
+				5F02000C2C0000020000000C /* Monitors */,
+				5F02000D2C0000020000000D /* TouchBar */,
+				5F02000E2C0000020000000E /* Utilities */,
+				5F02000F2C0000020000000F /* Views */,
+			);
+			path = CodexReminder;
+			sourceTree = "<group>";
+		};
+		5F0200042C00000200000004 /* CodexReminderCore */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100402C00000100000040 /* HookBridge.swift */,
+				5F0100412C00000100000041 /* HookInstallationManager.swift */,
+				5F0100422C00000100000042 /* HookNotificationEvent.swift */,
+				5F0100432C00000100000043 /* HookRuntimeState.swift */,
+				5F0100442C00000100000044 /* MonitorConfig.swift */,
+				5F0100452C00000100000045 /* OutputAnalyzer.swift */,
+				5F0100462C00000100000046 /* ProcessOutputParser.swift */,
+				5F0100472C00000100000047 /* StateEngine.swift */,
+				5F0100482C00000100000048 /* ToolChoice.swift */,
+				5F0100492C00000100000049 /* ToolInfo.swift */,
+				5F01004A2C0000010000004A /* ToolStatus.swift */,
+			);
+			path = CodexReminderCore;
+			sourceTree = "<group>";
+		};
+		5F0200052C00000200000005 /* CodexReminderHook */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100502C00000100000050 /* main.swift */,
+			);
+			path = CodexReminderHook;
+			sourceTree = "<group>";
+		};
+		5F0200062C00000200000006 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5F0200072C00000200000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100042C00000100000004 /* Info.plist */,
+				5F0100052C00000100000005 /* CodexReminder.entitlements */,
+				5F0100072C00000100000007 /* CodexReminder.icns */,
+				5F0100062C00000100000006 /* touch_bar.png */,
+				5F0100082C00000100000008 /* ProviderIcons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F0200092C00000200000009 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5F01000B2C0000010000000B /* package_app.sh */,
+				5F01000C2C0000010000000C /* verify_packaging.sh */,
+				5F01000D2C0000010000000D /* verify_detection.sh */,
+				5F01000E2C0000010000000E /* simulate_notifications.sh */,
+				5F01000F2C0000010000000F /* respond_to_latest.py */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		5F02000A2C0000020000000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100192C00000100000019 /* CodexReminder.app */,
+				5F01001A2C0000010000001A /* libCodexReminderCore.a */,
+				5F01001B2C0000010000001B /* CodexReminderHook */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F02000B2C0000020000000B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100212C00000100000021 /* AppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F02000C2C0000020000000C /* Monitors */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100222C00000100000022 /* ClaudeCodeMonitor.swift */,
+				5F0100232C00000100000023 /* CodexMonitor.swift */,
+				5F0100242C00000100000024 /* FileBasedMonitor.swift */,
+				5F0100252C00000100000025 /* QoderMonitor.swift */,
+				5F0100262C00000100000026 /* ToolMonitor.swift */,
+			);
+			path = Monitors;
+			sourceTree = "<group>";
+		};
+		5F02000D2C0000020000000D /* TouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100272C00000100000027 /* TouchBarController.swift */,
+			);
+			path = TouchBar;
+			sourceTree = "<group>";
+		};
+		5F02000E2C0000020000000E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F0100282C00000100000028 /* AppIconResource.swift */,
+				5F0100292C00000100000029 /* HookResponseWriter.swift */,
+				5F01002A2C0000010000002A /* Logging.swift */,
+				5F01002B2C0000010000002B /* NotificationHelper.swift */,
+				5F01002C2C0000010000002C /* ProcessHelper.swift */,
+				5F01002D2C0000010000002D /* StatusBarController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5F02000F2C0000020000000F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F01002E2C0000010000002E /* MenuBarIcon.swift */,
+				5F01002F2C0000010000002F /* MenuBarView.swift */,
+				5F0100302C00000100000030 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F0300012C00000300000001 /* CodexReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0500022C00000500000002 /* Build configuration list for PBXNativeTarget "CodexReminder" */;
+            buildPhases = (
+				5F0700012C00000700000001 /* Sources */,
+				5F0700022C00000700000002 /* Frameworks */,
+				5F0700032C00000700000003 /* Resources */,
+				5F0700042C00000700000004 /* Copy Hook */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F0800012C00000800000001 /* PBXTargetDependency */,
+				5F0800032C00000800000003 /* PBXTargetDependency */,
+			);
+			name = CodexReminder;
+			productName = CodexReminder;
+			productReference = 5F0100192C00000100000019 /* CodexReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F0300022C00000300000002 /* CodexReminderCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0500072C00000500000007 /* Build configuration list for PBXNativeTarget "CodexReminderCore" */;
+			buildPhases = (
+				5F0700052C00000700000005 /* Sources */,
+				5F0700062C00000700000006 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodexReminderCore;
+			productName = CodexReminderCore;
+			productReference = 5F01001A2C0000010000001A /* libCodexReminderCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5F0300032C00000300000003 /* CodexReminderHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F05000A2C0000050000000A /* Build configuration list for PBXNativeTarget "CodexReminderHook" */;
+			buildPhases = (
+				5F0700072C00000700000007 /* Sources */,
+				5F0700082C00000700000008 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F0800052C00000800000005 /* PBXTargetDependency */,
+			);
+			name = CodexReminderHook;
+			productName = CodexReminderHook;
+			productReference = 5F01001B2C0000010000001B /* CodexReminderHook */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F0400012C00000400000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					5F0300012C00000300000001 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					5F0300022C00000300000002 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					5F0300032C00000300000003 = {
+						CreatedOnToolsVersion = 16.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5F0500012C00000500000001 /* Build configuration list for PBXProject "CodexReminder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F0200012C00000200000001;
+			productRefGroup = 5F02000A2C0000020000000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F0300012C00000300000001 /* CodexReminder */,
+				5F0300022C00000300000002 /* CodexReminderCore */,
+				5F0300032C00000300000003 /* CodexReminderHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F0700032C00000700000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0600402C00000600000040 /* CodexReminder.icns in Resources */,
+				5F0600412C00000600000041 /* touch_bar.png in Resources */,
+				5F0600422C00000600000042 /* ProviderIcons in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F0700012C00000700000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0600012C00000600000001 /* CodexReminderApp.swift in Sources */,
+				5F0600022C00000600000002 /* AppState.swift in Sources */,
+				5F0600032C00000600000003 /* ClaudeCodeMonitor.swift in Sources */,
+				5F0600042C00000600000004 /* CodexMonitor.swift in Sources */,
+				5F0600052C00000600000005 /* FileBasedMonitor.swift in Sources */,
+				5F0600062C00000600000006 /* QoderMonitor.swift in Sources */,
+				5F0600072C00000600000007 /* ToolMonitor.swift in Sources */,
+				5F0600082C00000600000008 /* TouchBarController.swift in Sources */,
+				5F0600092C00000600000009 /* AppIconResource.swift in Sources */,
+				5F06000A2C0000060000000A /* HookResponseWriter.swift in Sources */,
+				5F06000B2C0000060000000B /* Logging.swift in Sources */,
+				5F06000C2C0000060000000C /* NotificationHelper.swift in Sources */,
+				5F06000D2C0000060000000D /* ProcessHelper.swift in Sources */,
+				5F06000E2C0000060000000E /* StatusBarController.swift in Sources */,
+				5F06000F2C0000060000000F /* MenuBarIcon.swift in Sources */,
+				5F0600102C00000600000010 /* MenuBarView.swift in Sources */,
+				5F0600112C00000600000011 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0700052C00000700000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0600202C00000600000020 /* HookBridge.swift in Sources */,
+				5F0600212C00000600000021 /* HookInstallationManager.swift in Sources */,
+				5F0600222C00000600000022 /* HookNotificationEvent.swift in Sources */,
+				5F0600232C00000600000023 /* HookRuntimeState.swift in Sources */,
+				5F0600242C00000600000024 /* MonitorConfig.swift in Sources */,
+				5F0600252C00000600000025 /* OutputAnalyzer.swift in Sources */,
+				5F0600262C00000600000026 /* ProcessOutputParser.swift in Sources */,
+				5F0600272C00000600000027 /* StateEngine.swift in Sources */,
+				5F0600282C00000600000028 /* ToolChoice.swift in Sources */,
+				5F0600292C00000600000029 /* ToolInfo.swift in Sources */,
+				5F06002A2C0000060000002A /* ToolStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0700072C00000700000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0600302C00000600000030 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F0800012C00000800000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F0300022C00000300000002 /* CodexReminderCore */;
+			targetProxy = 5F0800022C00000800000002 /* PBXContainerItemProxy */;
+		};
+		5F0800032C00000800000003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F0300032C00000300000003 /* CodexReminderHook */;
+			targetProxy = 5F0800042C00000800000004 /* PBXContainerItemProxy */;
+		};
+		5F0800052C00000800000005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F0300022C00000300000002 /* CodexReminderCore */;
+			targetProxy = 5F0800062C00000800000006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F0500032C00000500000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F0500042C00000500000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5F0500052C00000500000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/CodexReminder.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = DL8JT73BPB;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codexreminder.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F0500062C00000500000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/CodexReminder.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = DL8JT73BPB;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codexreminder.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5F0500082C00000500000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F0500092C00000500000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5F05000B2C0000050000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codexreminder.hook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F05000C2C0000050000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codexreminder.hook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F0500012C00000500000001 /* Build configuration list for PBXProject "CodexReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0500032C00000500000003 /* Debug */,
+				5F0500042C00000500000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F0500022C00000500000002 /* Build configuration list for PBXNativeTarget "CodexReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0500052C00000500000005 /* Debug */,
+				5F0500062C00000500000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F0500072C00000500000007 /* Build configuration list for PBXNativeTarget "CodexReminderCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0500082C00000500000008 /* Debug */,
+				5F0500092C00000500000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F05000A2C0000050000000A /* Build configuration list for PBXNativeTarget "CodexReminderHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F05000B2C0000050000000B /* Debug */,
+				5F05000C2C0000050000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F0400012C00000400000001 /* Project object */;
+}
